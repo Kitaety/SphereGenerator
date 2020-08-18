@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 300px;
+}
+.container{
+    position: relative;
+    margin: 200px auto;
+    perspective: 500px;
+
+    width: 25px;
+    height: 25px;
+}
+.sphere{
+    margin:250px auto;
+    width: inherit;
+    height: inherit;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+}
+.side{
+    border:0px solid;
+    height:0;
+    position: absolute;
+    font: normal 30px Arial;
+    text-align: center;
+    color: #fff;
+    backface-visibility: hidden;
+    image-rendering: pixelated;
+    image-rendering:-moz-crisp-edges;
+    -ms-interpolation-mode:nearest-neighbor
+}
+
+/*
+    стили куба ориентации
+*/
+.container_cube{
+    position: relative;
+    perspective: 250px;
+    width: 100px;
+    height: 100px;
+}
+#cube {
+    position: fixed;
+    left:30px;
+    top:30px;
+    transform-style: preserve-3d;
+    width: inherit;
+    height: inherit;
+}    
+#cube .side{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 2px solid white;
+    backface-visibility: hidden;
+}
+#cube .side.front{
+    background-color: green;
+    transform:translateZ(50px);
+}
+#cube .side.back{
+    background-color: red;
+    transform:rotateY(180deg) translateZ(50px);
+}
+#cube .side.left{
+    background-color: yellow;
+    transform:rotateY(-90deg) translateZ(50px);
+}
+#cube .side.rigth{
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(50px);
+}
+#cube .side.top{
+    background-color: orange;
+    transform: rotateX(90deg) translateZ(50px);
+}
+#cube .side.bottom{
+    background-color: blueviolet;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+/*
+панель ввода
+*/
+.input_panel{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top:30px;
+    color:white;
+}
+.input_panel *{
+    margin:0 5px;
+}
+.input{
+    color: black;
+}
