@@ -141,13 +141,13 @@ document.onkeydown = function (e) {
 	if (e.keyCode === 40) rotateX -= 5;
 
 	if(rotateX>360)
-		rotateX=0;
+		rotateX-=360;
 	if(rotateX<0)
-		rotateX=360;
+		rotateX+=360;
 	if(rotateY>360)
-		rotateY=0;
+		rotateY-=360;
 	if(rotateY<0)
-		rotateY=360;
+		rotateY+=360;
 
 	sphere.style.transform = 
     'rotateY(' + rotateY + 'deg)'+
@@ -172,30 +172,30 @@ function onClick(){
 function onCLickButton(code){
 	switch(code){
 		case 0:{
-			rotateX-=5;
+			rotateX-=30;
 			break;
 		}
 		case 1:{
-			rotateX+=5;
+			rotateX+=30;
 			break;
 		}
 		case 2:{
-			rotateY+=5;
+			rotateY+=30;
 			break;
 		}
 		case 3:{
-			rotateY-=5;
+			rotateY-=30;
 			break;
 		}
 	}
 	if(rotateX>360)
-		rotateX=0;
+		rotateX-=360;
 	if(rotateX<0)
-		rotateX=360;
+		rotateX+=360;
 	if(rotateY>360)
-		rotateY=0;
+		rotateY-=360;
 	if(rotateY<0)
-		rotateY=360;
+		rotateY+=360;
 
 	sphere.style.transform = 
     'rotateY(' + rotateY + 'deg)'+
