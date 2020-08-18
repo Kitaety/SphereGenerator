@@ -168,3 +168,75 @@ function onClick(){
 		generateSphere(value);
 	}
 }
+
+function onCLickButton(code){
+	switch(code){
+		case 0:{
+			rotateX-=5;
+			break;
+		}
+		case 1:{
+			rotateX+=5;
+			break;
+		}
+		case 2:{
+			rotateY+=5;
+			break;
+		}
+		case 3:{
+			rotateY-=5;
+			break;
+		}
+	}
+	if(rotateX>360)
+		rotateX=0;
+	if(rotateX<0)
+		rotateX=360;
+	if(rotateY>360)
+		rotateY=0;
+	if(rotateY<0)
+		rotateY=360;
+
+	sphere.style.transform = 
+    'rotateY(' + rotateY + 'deg)'+
+	'rotateX(' + rotateX + 'deg)';
+
+	cube.style.transform = 
+    'rotateY(' + rotateY + 'deg)'+
+    'rotateX(' + rotateX + 'deg)';
+}
+
+let isShow =false;
+
+let bUp = document.getElementById('controlU');
+let bDown = document.getElementById('controlD');
+let bRight = document.getElementById('controlR');
+let bLeft = document.getElementById('controlL');
+
+
+function onClickShow(){
+
+	isShow=!isShow;
+
+	if(isShow){
+		bUp.style.backgroundColor = "rgba(100%, 100%, 100%, 0.1)";
+		bDown.style.backgroundColor = "rgba(100%, 100%, 100%, 0.1)";
+		bLeft.style.backgroundColor = "rgba(100%, 100%, 100%, 0.1)";
+		bRight.style.backgroundColor = "rgba(100%, 100%, 100%, 0.1)";
+
+		bUp.style.border="5px solid white";
+		bDown.style.border="5px solid white";
+		bLeft.style.border="5px solid white";
+		bRight.style.border="5px solid white";
+	}else{
+		bUp.style.backgroundColor = "transparent";
+		bDown.style.backgroundColor = "transparent";
+		bLeft.style.backgroundColor = "transparent";
+		bRight.style.backgroundColor = "transparent";
+
+		bUp.style.border="0px";
+		bDown.style.border="0px";
+		bLeft.style.border="0px";
+		bRight.style.border="0px";
+	}
+}
