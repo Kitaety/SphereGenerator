@@ -172,19 +172,19 @@ function onClick(){
 function onCLickButton(code){
 	switch(code){
 		case 0:{
-			rotateX-=30;
+			rotateX-=100;
 			break;
 		}
 		case 1:{
-			rotateX+=30;
+			rotateX+=100;
 			break;
 		}
 		case 2:{
-			rotateY+=30;
+			rotateY+=100;
 			break;
 		}
 		case 3:{
-			rotateY-=30;
+			rotateY-=100;
 			break;
 		}
 	}
