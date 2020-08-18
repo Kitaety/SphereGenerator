@@ -10,4 +10,6 @@
 4.Поварачиваете сферу стрелками на клавиатуре
 
 
+UPD:Добавил кнопки управления. Показать/Скрыть по нажатию Show Button
+
 [Пример генерации сферы с текстурой земли](https://rawcdn.githack.com/Kitaety/SphereGenerator/4185c5159dcf46ae8f73d2144ae805b245ea5ba6/test.html)
