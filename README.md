@@ -10,4 +10,4 @@
 4.Поварачиваете сферу стрелками на клавиатуре
 
 
-[Пример генерации сферы с текстурой земли](http://htmlpreview.github.com/?https://github.com/Kitaety/SphereGenerator/blob/master/test.html)
+[Пример генерации сферы с текстурой земли](https://rawgit.com/Kitaety/SphereGenerator/master/test.html)
