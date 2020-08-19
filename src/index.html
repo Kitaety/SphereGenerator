@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="rigth_top_panel">
+        <select name="selectBox" id="selectBox">
+            <option value="./img/texture.jpg" selected="selected">Earth</option>
+            <option value="./img/texture1.jpg">Mars</option>
+            <option value="./img/texture2.jpg">Moon</option>
+            <option value="./img/texture3.jpg">Jupiter</option>
+        </select>
+        <button class="show" onclick="onClickShow()">Show Button</button>
+    </div>
+    <div class="container_cube">
+        <div id="cube">
+            <div class="side front">front</div>
+            <div class="side back">back</div>
+            <div class="side left">left</div>
+            <div class="side rigth">rigth</div>
+            <div class="side top">top</div>
+            <div class="side bottom">bottom</div>
+        </div>
+    </div>
+    <div class="input_panel">
+        <p>количетсво ребер n-угольника(>=4 && n%2==0) </p>
+        <input id="input" type="number" class="input">
+        <button onclick="onClick()">OK</button>
+    </div>
+    <div class="button_panel">
+        <button id="controlU" class="up" onclick="onCLickButton(0)"></button>
+        <button id="controlR" class="right" onclick="onCLickButton(3)"></button>
+        <button id="controlL" class="left" onclick="onCLickButton(2)"></button>
+        <button id="controlD" class="down" onclick="onCLickButton(1)"></button>
+    </div>
+    <div class="wrapper">
+        <div id="container" class="container">
+            <div id="sphere" class="sphere">
+            </div>
+        </div>
+    </div>
+    
+    <script  src="./js/main.js">
+    </script>
+
+</body>
+</html>
