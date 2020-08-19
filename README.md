@@ -26,4 +26,4 @@
 
 /*******************************************/
 
-[Пример генерации сферы с текстурой земли](https://rawcdn.githack.com/Kitaety/SphereGenerator/c4a058abdfe2fbd63804333199e56b7a36879bf2/src/index.html)
+[Пример генерации сферы с текстурой земли](https://rawcdn.githack.com/Kitaety/SphereGenerator/c0492a549c87bfe487a05c184c31effea0a8b948/src/index.html)
